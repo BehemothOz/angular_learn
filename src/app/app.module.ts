@@ -4,12 +4,10 @@ import { ClarityModule } from "@clr/angular";
 import { AppRoutingModule } from './/app-routing.module';
 
 import { ComponentsModule } from "./components/components.module";
+import { LifecycleModule } from "./lifecycle/lifecycle.module";
 
 import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
-// import { TwoComponent } from './two/two.component';
-// import { ThreeComponent } from './three/three.component';
-
 
 @NgModule({
   declarations: [
@@ -18,9 +16,10 @@ import { OneComponent } from './one/one.component';
   ],
   imports: [
     BrowserModule,
-    ClarityModule,
+    ClarityModule.forRoot(),
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    LifecycleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

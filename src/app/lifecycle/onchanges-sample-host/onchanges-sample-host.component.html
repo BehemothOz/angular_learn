@@ -1,0 +1,29 @@
+<div>
+  <div>Counter + <b><code class="language-html">ngOnChange()</code></b></div>
+  
+  <button type="button" class="btn btn-icon" (click)="increment()">+</button>
+  <app-onchanges-sample [value]="currentValue"></app-onchanges-sample>
+  <button type="button" class="btn btn-icon" (click)="decrement()">-</button>
+  
+  <div><i>Смотри в консоль</i></div>
+
+  <br>
+  <hr>
+  <br>
+
+  <div>
+    <b><code class="language-html">ngOnChange()</code></b> + 
+    <b><code class="language-html">SimpleChanges</code></b>
+  </div>
+
+  <div class="btn-group btn-primary">
+    <button class="btn btn-primary" (click)="changeName()">Change name</button>
+    <button class="btn btn-success" (click)="changeValue()">Change value</button>
+    <button class="btn btn-warning" (click)="changeBoth()">Change both</button>
+  </div>
+
+  <app-onchanges-sample [name]="nameValue" [value]="changeableValue"></app-onchanges-sample>
+
+  <div><i>Смотри в консоль</i></div>
+
+</div>

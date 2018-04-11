@@ -33,11 +33,8 @@ export class TimerComponent {
     this.currentValue = 0;
   }
 
-  callback() {
+  private callback() {
     this.currentValue++;
     this.tick.emit(this.currentValue);
   }
 }
-
-let zxc = new TimerComponent();
-console.log(zxc);
