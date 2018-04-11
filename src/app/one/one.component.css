@@ -1,0 +1,14 @@
+:host {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list > li > span:hover {
+  color: #266900;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.selected-language {
+  color: #E62700;
+  font-weight: bold;
+}

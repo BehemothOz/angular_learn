@@ -1,0 +1,4 @@
+<div>
+  <app-timer [name]=" 'Timer' " (tick)="handlerTick1($event)"></app-timer>
+  <app-timer [name]=" 'Timer + interval 3s' " [interval]="3000" (tick)="handlerTick2($event)"></app-timer>
+</div>

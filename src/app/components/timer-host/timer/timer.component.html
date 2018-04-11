@@ -1,0 +1,14 @@
+<div class="timer-panel">
+  <div class="info">
+    <span class="name">{{ name }}</span>
+    <span class="current-value">{{ currentValue }}</span>
+  </div>
+
+  <div class="btn-group btn-primary">
+    <button class="btn btn-primary" (click)="start()">Start</button>
+    <button class="btn btn-success" (click)="stop()">Stop</button>
+    <button 
+      *ngIf="showingClear"
+      class="btn btn-warning" (click)="clear()">Clear</button>
+  </div>
+</div> 

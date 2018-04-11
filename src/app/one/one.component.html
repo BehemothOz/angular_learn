@@ -1,0 +1,9 @@
+<h2>Hello World List</h2>
+<br>
+<ul class="list">
+  <li *ngFor="let phrase of phrases">
+    <span (click)="onSelect(phrase)">{{ phrase.value }}</span>
+  </li>
+</ul>
+
+<p *ngIf="selectedPhraseLanguage">Selected Language : <span class="selected-language">{{selectedPhraseLanguage}}</span></p>

@@ -1,0 +1,33 @@
+import { Component, OnInit } from '@angular/core';
+import { Phrase } from './phrase';
+
+const PHRASES: Array<Phrase> = [
+  { value: "Hello World", language: "English" },
+  { value: "Привет Мир", language: "Russian" },
+  { value: "Привіт Світ", language: "Ukrainian" },
+  { value: "Hola Mundo", language: "Spanish" },
+  { value: "Bonjour le monde", language: "French" },
+  { value: "Hallo Welt", language: "German" },
+  { value: "Ciao mondo", language: "Italian" },
+  { value: "Witaj świecie", language: "Polish" },
+  { value: "Hej världen", language: "Swdish" },
+  { value: "Pozdravljen, svet", language: "Slovenian" },
+  { value: "Прывітанне Сусвет", language: "Belarusian" }
+];
+
+@Component({
+  selector: 'app-one',
+  templateUrl: './one.component.html',
+  styleUrls: ['./one.component.css']
+})
+
+export class OneComponent {
+  phrases: Array<Phrase> = PHRASES;
+  selectedPhraseLanguage: string;
+  
+  onSelect(phrase: Phrase) {
+    this.selectedPhraseLanguage = phrase.language;
+
+    console.log(this.selectedPhraseLanguage)
+  }
+}
