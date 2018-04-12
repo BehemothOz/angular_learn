@@ -6,6 +6,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ComponentsModule } from "./components/components.module";
 import { LifecycleModule } from "./lifecycle/lifecycle.module";
 import { ChildAndContentModule  } from "./child-and-content/child-and-content.module";
+import { BindingModule } from './binding/binding.module';
+import { TasksModule } from './tasks/tasks.module';
 
 import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
@@ -21,7 +23,9 @@ import { OneComponent } from './one/one.component';
     AppRoutingModule,
     ComponentsModule,
     LifecycleModule,
-    ChildAndContentModule
+    ChildAndContentModule,
+    BindingModule,
+    TasksModule
   ],
   providers: [],
   bootstrap: [AppComponent]

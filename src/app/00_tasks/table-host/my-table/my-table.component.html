@@ -1,0 +1,22 @@
+<div class="row-value">Input value rows: <b>{{ rows }}</b></div>
+
+<table class="table my-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>
+        <button class="btn btn-warning btn-sm" (click)="delete(product)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
