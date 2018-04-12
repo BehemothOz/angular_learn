@@ -11,16 +11,24 @@ import { OninitSampleHostComponent } from './lifecycle/oninit-sample-host/oninit
 import { OnchangesSampleHostComponent } from './lifecycle/onchanges-sample-host/onchanges-sample-host.component';
 import { AlleventSampleHostComponent } from './lifecycle/allevent-sample-host/allevent-sample-host.component';
 
+import { ViewChildHostComponent } from './child-and-content/view-child-host/view-child-host.component';
+import { ViewChildrenHostComponent } from './child-and-content/view-children-host/view-children-host.component';
+import { ViewContentHostComponent } from './child-and-content/view-content-host/view-content-host.component';
+
+
 const routes: Routes = [
   { path: '', redirectTo: 'one', pathMatch: 'full' },
   { path: 'one', component: OneComponent },
-  { path: 'counter-host', component: CounterHostComponent },
-  { path: 'timer-host', component: TimerHostComponent },
-  { path: 'card-name-host', component: CardNameHostComponent },
-  { path: 'message-box-host', component: MessageBoxHostComponent },
-  { path: 'oninit-sample-host', component: OninitSampleHostComponent },
-  { path: 'onchange-sample-host', component: OnchangesSampleHostComponent },
-  { path: 'allevent-sample-host', component: AlleventSampleHostComponent }
+  { path: 'counter', component: CounterHostComponent },
+  { path: 'timer', component: TimerHostComponent },
+  { path: 'card-name', component: CardNameHostComponent },
+  { path: 'message-box', component: MessageBoxHostComponent },
+  { path: 'oninit-sample', component: OninitSampleHostComponent },
+  { path: 'onchange-sample', component: OnchangesSampleHostComponent },
+  { path: 'allevent-sample', component: AlleventSampleHostComponent },
+  { path: 'view-child', component: ViewChildHostComponent },
+  { path: 'view-children', component: ViewChildrenHostComponent },
+  { path: 'view-content', component: ViewContentHostComponent }
 ];
 
 @NgModule({

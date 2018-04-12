@@ -15,3 +15,6 @@ export class TimerHostComponent {
     console.log(value);
   }
 }
+
+let x = new TimerHostComponent();
+console.log(x)
