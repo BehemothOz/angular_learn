@@ -1,3 +1,35 @@
-<p>
-  interpolation works!
-</p>
+<div class="row">
+  <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="card-header">
+        Card User
+      </div>
+      <div class="card-block">
+        <div class="card-media-block">
+
+          <div class="card-media-description">
+            <!--
+              {{firstName}} - выражение (template expression)
+              Angular выполняет выражение (evaluate), а после конвертирует его в строку.
+            -->
+            <span class="card-media-title">
+              First Name: <b>{{ firstName }}</b>
+            </span>
+            <span class="card-media-text">
+              Last name: <b>{{ lastName }}</b>
+            </span>
+            <!--
+              Выражение может вызывать методы хостового компонента
+            -->
+            <span class="card-media-text">
+              Full name: <b>{{ getFullName() }}</b>
+            </span>
+          </div>
+        </div>
+        <div class="card-text">
+          <b>Evaluation and convertion to string - </b> {{ 1 + 1 + getFullName() }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
