@@ -1,0 +1,27 @@
+<!--
+  [class]="currentClasses" установка значения для свойства class
+  Все классы будут изменены при смене значения свойства
+-->
+<div [class]="currentClasses">Hello world #1</div>
+<button  class="btn" (click)="toggleAllClasses()">Toggle All Classes</button> 
+
+<hr />
+
+<div class="btn-group btn-primary">
+  <button class="btn btn-primary" (click)="toggleAccentBorder()">isAccentBorder</button>
+  <button class="btn btn-success" (click)="toggleErrorText()">isErrorText</button>
+  <button class="btn btn-danger" (click)="toggleHighlighted()">isHighlighted</button>
+</div>
+
+<!--
+  [class.accent-border]="isAccentBorder" - class binding
+  класс accent-border будет добавлен к списку классов если значение isAccentBorder == true
+  и удален если значение false 
+-->
+<div 
+  [class.accent-border]="isAccentBorder"
+  [class.error-text]="isErrorText"
+  [class.highlighted]="isHighlighted">
+  Hello world #2
+</div>
+

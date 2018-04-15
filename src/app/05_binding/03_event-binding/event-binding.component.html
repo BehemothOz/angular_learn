@@ -1,0 +1,22 @@
+<div class="btn-group btn-primary">
+  <!--(click) - event target-->
+  <button class="btn btn-primary" (click)="click1()">(click)</button>
+  <!--on-click - canonical form-->
+  <button class="btn btn-success" (click)="click2()">on-click</button>
+
+  <!--
+    $event - Event Object
+    содержимое Event Object определяется целевым свойством (target event)
+  -->
+  <button class="btn btn-warning" (click)="clickEvent($event)">(click) + $event</button>
+</div>
+
+<ol class="list">
+  <li><b>(click)</b> - event target</li>
+  <li><b>on-click</b> - canonical form</li>
+  <li><b>$event</b> - Event Object. Cодержимое Event Object определяется целевым свойством (target event)</li>
+</ol>
+
+<p>
+  <i>Смотри консоль</i>
+</p>

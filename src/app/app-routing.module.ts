@@ -22,12 +22,12 @@ import { ViewChildrenHostComponent } from './04_child-and-content/view-children-
 import { ViewContentHostComponent } from './04_child-and-content/view-content-host/view-content-host.component';
 
 // Binding
-import { InterpolationComponent } from './05_binding/interpolation/interpolation.component';
-import { PropertyBindingComponent } from './05_binding/property-binding/property-binding.component';
-import { EventBindingComponent } from './05_binding/event-binding/event-binding.component';
-import { AttributeBindingComponent } from './05_binding/attribute-binding/attribute-binding.component';
-import { ClassBindingComponent } from './05_binding/class-binding/class-binding.component';
-import { StyleBindingComponent } from './05_binding/style-binding/style-binding.component';
+import { InterpolationComponent } from './05_binding/01_interpolation/interpolation.component';
+import { PropertyBindingComponent } from './05_binding/02_property-binding/property-binding.component';
+import { EventBindingComponent } from './05_binding/03_event-binding/event-binding.component';
+import { AttributeBindingComponent } from './05_binding/04_attribute-binding/attribute-binding.component';
+import { ClassBindingComponent } from './05_binding/05_class-binding/class-binding.component';
+import { StyleBindingComponent } from './05_binding/06_style-binding/style-binding.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'one', pathMatch: 'full' },
