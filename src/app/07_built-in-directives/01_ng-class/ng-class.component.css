@@ -1,0 +1,23 @@
+div {
+  padding: 8px;
+  margin: 8px;
+}
+
+.accent {
+  outline: 2px solid #1D5100;
+}
+
+.error {
+  font-family: monospace;
+  color: #F52F22;
+  font-weight: bold;
+}
+
+.highlighted {
+  background-color: #F8B7B6;
+}
+
+.panel {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #002344;
+}

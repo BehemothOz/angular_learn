@@ -1,3 +1,20 @@
-<p>
-  ng-if works!
-</p>
+<button class="btn" (click)="toggleLists()">toggle lists</button>
+
+<h4>1. <b class="orange">*ngIf</b> (удаляет из DOM)</h4>
+<!-- *ngIf - удаляет элемент и его дочерние элементы из дерева если выражение false, 
+     иначе, колон элемента div будет добавлен в разметку-->
+<ul class="list" *ngIf="showUl">
+  <li>Item 00</li>
+  <li>Item 01</li>
+  <li>Item 02</li>
+  <li>Item 03</li>
+</ul>
+
+<h4>2. <b class="orange">[style.display]</b> (оставляет в DOM, но скрывает)</h4>
+<!--[style.display]="showUl ? 'block' : 'none'" - отображение и скрытие элемента-->
+<ul class="list" [style.display]="showUl ? 'block' : 'none'">
+  <li>Item 04</li>
+  <li>Item 05</li>
+  <li>Item 06</li>
+  <li>Item 07</li>
+</ul>

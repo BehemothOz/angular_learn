@@ -1,3 +1,66 @@
-<p>
-  ng-class works!
-</p>
+<section class="form-block">
+    <div class="form-group">
+      <div class="checkbox-inline">
+        <input type="checkbox" id="checkrads_0" [(ngModel)]="setting.accent">
+        <label for="checkrads_0">Accent</label>
+      </div>
+      <div class="checkbox-inline">
+        <input type="checkbox" id="checkrads_1" [(ngModel)]="setting.error">
+        <label for="checkrads_1">Error</label>
+      </div>
+      <div class="checkbox-inline">
+        <input type="checkbox" id="checkrads_2" [(ngModel)]="setting.highlighted">
+        <label for="checkrads_2">Highlighted</label>
+      </div>
+    </div>
+  </section>
+
+<!-- 1 -->
+<div class="panel">
+  <h5><b>1. [ngClass]</b></h5>
+
+  <!--
+    Использование директивы ngClass
+    При использовании данной директивы применяется привязка к контрольному объекту.
+    Каждый ключ объекта - имя CSS класса. Если значение ключа true - класс добавляется
+    к элементу, иначе - убирается. 
+-->
+  <div [ngClass]="setting">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit..
+  </div>
+</div>
+
+
+<!-- 2 -->
+<div class="panel">
+  <h5><b>2. class binding</b></h5>
+
+  <!-- Использование class binding -->
+  <div [class.accent]="setting.accent"
+       [class.error]="setting.error"
+       [class.highlighted]="setting.highlighted">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit..
+  </div>
+</div>
+
+
+<!-- 3 -->
+<div class="panel">
+  <h5><b>3. [ngClass]. Использование массива вместо объекта</b></h5>
+
+  <!-- Использование массива вместо объекта -->
+  <div [ngClass]="['accent', 'error']">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit..
+  </div>
+</div>
+
+
+<!-- 4 -->
+<div class="panel">
+  <h5><b>4. [ngClass]. Использование строкового значения</b></h5>
+
+  <!-- Использование строкового значения -->
+  <div [ngClass]=" 'highlighted' ">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit..
+  </div>
+</div>
