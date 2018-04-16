@@ -1,0 +1,27 @@
+<div class="tip">For work: <span class="blue">import</span> <b>FormsModule</b></div>
+
+<!--
+  [(ngModel)]="expression" синтаксис двунаправленной привязки
+  [()] - banana in the box
+  Для использования директивы ngModule необходимо импортировать модуль FormsModule
+-->
+
+<section class="form-block">
+  <label>Simple Calculate</label>
+  <div class="form-group">
+    <label for="formFields_1"></label>
+    <input [(ngModel)]="firstValue" type="text" id="formFields_1" placeholder="0" size="5">
+
+    <b>+</b>
+
+    <label for="formFields_2"></label>
+    <input [(ngModel)]="secondValue" type="text" id="formFields_2" placeholder="0" size="5">
+  </div>
+
+  <div class="result">Result: {{ resultValue }}</div>
+
+  <div class="btn-group btn-primary">
+    <button class="btn btn-primary" (click)="calculate()">Calculate</button>
+    <button class="btn btn-success" (click)="reset()">Reset</button>
+  </div>
+</section>

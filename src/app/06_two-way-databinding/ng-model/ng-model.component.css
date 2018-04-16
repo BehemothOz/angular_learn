@@ -1,0 +1,21 @@
+.blue {
+  color: blue;
+}
+
+.tip {
+  margin-bottom: 20px;
+}
+
+input {
+  text-align: center;
+}
+
+.form-block > label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.result {
+  margin: 15px 0;
+  font-weight: bold;
+}

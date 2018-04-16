@@ -1,0 +1,19 @@
+.orange {
+  color: orangered;
+}
+
+.blue {
+  color: blue
+}
+
+.green {
+  color: green;
+}
+
+.tip {
+  margin-bottom: 15px;
+}
+
+.tip b {
+  margin: 0 10px;
+}

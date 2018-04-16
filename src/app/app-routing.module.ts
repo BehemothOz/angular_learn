@@ -29,6 +29,23 @@ import { AttributeBindingComponent } from './05_binding/04_attribute-binding/att
 import { ClassBindingComponent } from './05_binding/05_class-binding/class-binding.component';
 import { StyleBindingComponent } from './05_binding/06_style-binding/style-binding.component';
 
+// Two Way Databinding
+import { NgModelComponent } from './06_two-way-databinding/ng-model/ng-model.component';
+import { NgModelInsideComponent } from './06_two-way-databinding/ng-model-inside/ng-model-inside.component';
+
+// Built in Directives
+import { NgClassComponent } from './07_built-in-directives/01_ng-class/ng-class.component';
+import { NgStyleComponent } from './07_built-in-directives/02_ng-style/ng-style.component';
+import { NgIfComponent } from './07_built-in-directives/03_ng-if/ng-if.component';
+import { NgSwitchComponent } from './07_built-in-directives/04_ng-switch/ng-switch.component';
+import { NgForComponent } from './07_built-in-directives/05_ng-for/ng-for.component';
+
+// Templates
+import { NgIfTemplatesComponent } from './08_templates/01_ng-if-templates/ng-if-templates.component';
+import { NgSwitchTemplatesComponent } from './08_templates/02_ng-switch-templates/ng-switch-templates.component';
+import { NgForTemplatesComponent } from './08_templates/03_ng-for-templates/ng-for-templates.component';
+import { TempRefVarComponent } from './08_templates/04_temp-ref-var/temp-ref-var.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'one', pathMatch: 'full' },
   { path: 'one', component: OneComponent },
@@ -48,7 +65,21 @@ const routes: Routes = [
   { path: 'event-binding', component: EventBindingComponent },
   { path: 'attribute-binding', component: AttributeBindingComponent },
   { path: 'class-binding', component: ClassBindingComponent },
-  { path: 'style-binding', component: StyleBindingComponent }
+  { path: 'style-binding', component: StyleBindingComponent },
+
+  { path: 'ng-model', component: NgModelComponent },
+  { path: 'ng-model-inside', component: NgModelInsideComponent },
+  
+  { path: 'ng-class', component: NgClassComponent },
+  { path: 'ng-style', component: NgStyleComponent },
+  { path: 'ng-if', component: NgIfComponent },
+  { path: 'ng-switch', component: NgSwitchComponent },
+  { path: 'ng-for', component: NgForComponent },
+
+  { path: 'ng-if-templates', component: NgIfTemplatesComponent },
+  { path: 'ng-switch-templates', component: NgSwitchTemplatesComponent },
+  { path: 'ng-for-templates', component: NgForTemplatesComponent },
+  { path: 'temp-ref-var', component: TempRefVarComponent }
 ];
 
 @NgModule({
