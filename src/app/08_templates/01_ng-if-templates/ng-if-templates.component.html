@@ -1,3 +1,25 @@
-<p>
-  ng-if-templates works!
-</p>
+<h4>
+  <span class="orange">*ngIf</span>
+  <b>=</b>
+  <span class="blue">ng-template</span>
+  <b>+</b>
+  <span class="blue">[ngIf]</span>
+  <b>+</b>
+  <span class="blue">content</span>
+</h4>
+
+<button class="btn" (click)="hide()">Hide</button>
+
+<div *ngIf="isVisible">
+  <b>*ngIf</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, suscipit?
+</div>
+
+<ng-template [ngIf]="isVisible">
+  <div>
+    <b>ng-template + [ngIf]</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </div>
+</ng-template>
+
+
+
+

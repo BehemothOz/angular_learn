@@ -1,3 +1,31 @@
 <p>
-  temp-ref-var works!
+  <b>Template Reference Variable</b> - ссылка на DOM элемент или директиву в шаблоне.
 </p>
+
+<!--
+    Template Reference Variable - ссылка на DOM элемент или директиву в шаблоне.
+    К переменной можно обратиться в любой части шаблона, в котором она объявлена.
+
+    Есть два способа объявления переменной:
+    префикс #, например #varname
+    префикс ref-, например, ref-varname
+-->
+
+<section class="form-block">
+  <div class="form-group">
+    <label for="formFields_1"></label>
+    <input type="text" id="formFields_1" placeholder="0" size="5" #firstInput>
+
+    <b>+</b>
+
+    <label for="formFields_2"></label>
+    <input type="text" id="formFields_2" placeholder="0" size="5" ref-secondInput>
+  </div>
+
+  <div class="result">Result: {{ resultValue }}</div>
+
+  <div class="btn-group btn-primary">
+    <!--firstInput - ссылка на элемент input созданный на 17 строке -->
+    <button class="btn btn-primary" (click)="calculate(firstInput.value, secondInput.value)">Sum</button>
+  </div>
+</section>

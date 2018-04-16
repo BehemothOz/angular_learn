@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ng-if-templates',
   templateUrl: './ng-if-templates.component.html',
   styleUrls: ['./ng-if-templates.component.css']
 })
-export class NgIfTemplatesComponent implements OnInit {
+export class NgIfTemplatesComponent {
+  isVisible: boolean = true;
 
-  constructor() { }
-
-  ngOnInit() {
+  hide(): void {
+    this.isVisible = false;
   }
-
 }

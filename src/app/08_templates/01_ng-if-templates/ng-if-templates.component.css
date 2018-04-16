@@ -1,0 +1,13 @@
+.orange {
+  color: orangered;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 15px 0;
+}
