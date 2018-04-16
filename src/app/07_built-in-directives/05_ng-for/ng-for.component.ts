@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ng-for',
   templateUrl: './ng-for.component.html',
   styleUrls: ['./ng-for.component.css']
 })
-export class NgForComponent implements OnInit {
+export class NgForComponent {
+  items: string[] = [];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    for(let i = 0; i <= 5; i++ ) {
+      this.items[i] = `item ${i}`;
+    }
   }
-
 }
