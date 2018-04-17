@@ -2,6 +2,22 @@
   vertical-align: middle;
 }
 
-.row-value {
-  margin-top: 15px;
+.highlight {
+  background-color: #e4d59d;
+}
+
+.select-block {
+  display: flex;
+  margin-left: 25px;
+}
+
+.select-block .title {
+  margin-right: 15px;
+}
+
+.panel-action {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: flex-start;
 }

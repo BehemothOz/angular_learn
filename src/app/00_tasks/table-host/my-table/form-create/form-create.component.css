@@ -1,0 +1,24 @@
+.form-create {
+  margin-top: 25px;
+  padding: 20px 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-section {
+  display: flex;
+}
+
+.form-item label {
+  margin-right: 5px;
+}
+
+.btn-add {
+  margin-top: 25px;
+}

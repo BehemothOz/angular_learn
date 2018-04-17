@@ -1,0 +1,50 @@
+<div class="form-create">
+  <section class="form-row">
+    <!-- 1 -->
+    <div class="form-item">
+      <label for="gForm_1">Id</label>
+      <input
+        class="form-control"
+        type="text"
+        id="gForm_1"
+        placeholder="0"
+        size="5"
+        [(ngModel)]="id">
+    </div>
+    <!-- 2 -->
+    <div class="form-item">
+      <label for="gForm_2">Name</label>
+      <input
+        class="form-control"
+        type="text"
+        id="gForm_3"
+        placeholder="Enter name here"
+        size="20"
+        [(ngModel)]="name">
+    </div>
+    <!-- 3 -->
+    <div class="form-item item-section">
+      <label for="gForm_3">Category</label>
+      <div class="select form-control">
+        <select id="gForm_3" [(ngModel)]="category">
+          <option>Category 1</option>
+          <option>Category 2</option>
+          <option>Category 3</option>
+        </select>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="form-item">
+      <label for="gForm_4">Price</label>
+      <input
+        class="form-control"
+        type="text"
+        id="gForm_4"
+        placeholder="Enter price here"
+        size="15"
+        [(ngModel)]="price">
+    </div>
+  </section>
+  
+  <button class="btn btn-primary btn-sm btn-add" (click)="addProduct()">add</button>
+</div>

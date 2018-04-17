@@ -1,18 +1,43 @@
-<div class="row-value">Input value rows: <b>{{ rows }}</b></div>
+<!-- form create component -->
+<app-form-create (getProduct)="handlerGetProduct($event)"></app-form-create>
 
+<!-- action panel -->
+<div class="panel-action">
+  <div class="row-value">Input value rows: <b>{{ rows }}</b></div>
+
+  <!-- select for filter -->
+  <section class="select-block">
+    <div class="title">Filter by category:</div>
+    <div class="select">
+      <select id="exampleSelect1" #selectCategory (change)="filterCategory(selectCategory.value)" [(ngModel)]="selectValue">
+        <option>All</option>
+        <option>Category 1</option>
+        <option>Category 2</option>
+        <option>Category 3</option>
+      </select>
+    </div>
+  </section>
+</div>
+
+<!-- table -->
 <table class="table my-table">
   <thead>
     <tr>
       <th>Id</th>
       <th>Name</th>
+      <th>Category</th>
       <th>Price</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of products">
+    <tr
+      *ngFor="let product of filteredProducts"
+      [class.highlight]="product.price > 500"
+    >
       <td>{{ product.id }}</td>
       <td>{{ product.name }}</td>
+      <td>{{ product.category }}</td>
       <td>{{ product.price }}</td>
       <td>
         <button class="btn btn-warning btn-sm" (click)="delete(product)">Delete</button>
