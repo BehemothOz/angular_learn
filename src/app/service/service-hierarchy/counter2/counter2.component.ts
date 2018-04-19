@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CounterService } from '../counter.service';
 
+// Данный компонент использует экземпляр сервсиа CounterService, который создан для родительского компонента.
+
 @Component({
   selector: 'app-counter2',
   templateUrl: './counter2.component.html',
