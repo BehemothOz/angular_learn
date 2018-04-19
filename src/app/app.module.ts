@@ -11,6 +11,8 @@ import { TasksModule } from './00_tasks/tasks.module';
 import { TwoWayDatabindingModule } from './06_two-way-databinding/two-way-databinding.module';
 import { BuiltInDirectivesModule } from './07_built-in-directives/built-in-directives.module';
 import { TemplatesModule } from './08_templates/templates.module';
+import { TestingModule } from './testing/testing.module';
+import { ServiceModule } from './service/service.module';
 
 import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
@@ -32,7 +34,9 @@ import { OneComponent } from './one/one.component';
     TasksModule,
     TwoWayDatabindingModule,
     BuiltInDirectivesModule,
-    TemplatesModule
+    TemplatesModule,
+    TestingModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

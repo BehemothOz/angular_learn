@@ -46,6 +46,13 @@ import { NgSwitchTemplatesComponent } from './08_templates/02_ng-switch-template
 import { NgForTemplatesComponent } from './08_templates/03_ng-for-templates/ng-for-templates.component';
 import { TempRefVarComponent } from './08_templates/04_temp-ref-var/temp-ref-var.component';
 
+// Service
+import { SimpleServiceComponent } from './service/simple-service/simple-service.component';
+import { ServiceHierarchyComponent } from './service/service-hierarchy/service-hierarchy.component';
+
+// Testing
+import { TestingHostComponent } from './testing/testing-host/testing-host.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'one', pathMatch: 'full' },
   { path: 'one', component: OneComponent },
@@ -79,7 +86,12 @@ const routes: Routes = [
   { path: 'ng-if-templates', component: NgIfTemplatesComponent },
   { path: 'ng-switch-templates', component: NgSwitchTemplatesComponent },
   { path: 'ng-for-templates', component: NgForTemplatesComponent },
-  { path: 'temp-ref-var', component: TempRefVarComponent }
+  { path: 'temp-ref-var', component: TempRefVarComponent },
+
+  { path: 'testing', component: TestingHostComponent },
+
+  { path: 'simple-service', component: SimpleServiceComponent },
+  { path: 'service-hierarchy', component: ServiceHierarchyComponent }
 ];
 
 @NgModule({

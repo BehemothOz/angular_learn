@@ -1,0 +1,22 @@
+<div class="panel">
+  <div class="form-inline">
+    <input [(ngModel)]="name" placeholder="Модель" />
+    <input [(ngModel)]="price" placeholder="Цена" />
+    <button class="btn" (click)="addItem(name, price)">Добавить</button>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Модель</th>
+        <th>Цена</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
